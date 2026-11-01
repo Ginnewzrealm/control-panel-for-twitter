@@ -2317,7 +2317,7 @@ const HIGH_CONTRAST_DARK = new Map([
   ['green500', 'rgb(97, 214, 163)'],
 ])
 // <body> pseudo-selector for pages the full-width content feature works on
-const FULL_WIDTH_BODY_PSEUDO = ':is(.Community, .Explore, .History, .HomeTimeline, .List, .Notifications, .Profile)'
+const FULL_WIDTH_BODY_PSEUDO = ':is(.Communities, .Community, .Explore, .History, .HomeTimeline, .List, .Lists, .Notifications, .Profile)'
 // Matches any notification count at the start of the title
 const TITLE_NOTIFICATION_RE = /^\(\d+\+?\) /
 // The Communities nav item takes you to /yourusername/communities
@@ -6801,6 +6801,7 @@ function processCurrentPage(route = getCurrentRoute()) {
   $body.classList.toggle('HideSidebar', shouldHideSidebar())
   $body.classList.toggle('History', isOnHistoryPage())
   $body.classList.toggle('List', isOnListPage())
+  $body.classList.toggle('Lists', isOnListsPage())
   $body.classList.toggle('HomeTimeline', isOnHomeTimelinePage())
   $body.classList.toggle('Notifications', isOnNotificationsPage())
   $body.classList.toggle('Profile', isOnProfilePage())
