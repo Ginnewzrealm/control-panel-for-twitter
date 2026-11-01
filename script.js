@@ -4929,7 +4929,9 @@ const configureCss = (() => {
         cssRules.push(`
           /* Use full width when the sidebar is visible */
           body.Sidebar${FULL_WIDTH_BODY_PSEUDO} ${Selectors.PRIMARY_COLUMN},
-          body.Sidebar${FULL_WIDTH_BODY_PSEUDO} ${Selectors.PRIMARY_COLUMN} > div:first-child > div:last-child {
+          body.Sidebar${FULL_WIDTH_BODY_PSEUDO} ${Selectors.PRIMARY_COLUMN} > div:first-child > div:last-child,
+          body.Sidebar${FULL_WIDTH_BODY_PSEUDO} ${Selectors.PRIMARY_COLUMN} > div:first-child > div:last-child > div:first-child,
+          body.Sidebar.Profile ${Selectors.PRIMARY_COLUMN} > div:first-child > div:last-child > div:first-child > div:first-child {
             max-width: 990px;
             width: 100%;
           }
