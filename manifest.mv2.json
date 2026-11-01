@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "default_locale": "en",
-  "name": "__MSG_extensionName__",
+  "name": "Control Panel for Twitter · 宽屏私人版",
   "description": "__MSG_extensionDescription__",
-  "homepage_url": "https://soitis.dev/control-panel-for-twitter",
+  "homepage_url": "https://github.com/Ginnewzrealm/control-panel-for-twitter",
   "version": "4.25.1.1",
   "version_name": "4.25.1 · 宽屏版",
   "icons": {

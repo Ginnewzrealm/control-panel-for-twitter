@@ -12,12 +12,8 @@ for (let manifestVersion of manifestVersions) {
   let manifestFile = `manifest.mv${manifestVersion}.json`
   let manifestData = require(`../${manifestFile}`)
   fs.copyFileSync(`./${manifestFile}`, './manifest.json')
-  execSync('web-ext build', {stdio: 'inherit'})
-  let renameTo = `./web-ext-artifacts/control_panel_for_twitter-${manifestData['version']}.mv${manifestVersion}.zip`
-  fs.renameSync(
-    `./web-ext-artifacts/control_panel_for_twitter-${manifestData['version']}.zip`,
-    renameTo,
-  )
-  console.log('Moved to:', path.resolve(renameTo))
+  let filename = `control_panel_for_twitter-${manifestData['version']}.mv${manifestVersion}.zip`
+  execSync(`web-ext build --filename ${filename} --overwrite-dest`, {stdio: 'inherit'})
+  console.log('Built:', path.resolve('./web-ext-artifacts', filename))
   fs.rmSync('./manifest.json')
 }
