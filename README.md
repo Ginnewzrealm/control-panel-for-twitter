@@ -1,19 +1,21 @@
-# [Control Panel for Twitter](https://soitis.dev/control-panel-for-twitter)
+# [Control Panel for Twitter · 宽屏私人版](https://github.com/Ginnewzrealm/control-panel-for-twitter)
 
-[![](icons/icon128.png)](https://soitis.dev/control-panel-for-twitter)
+[![](icons/icon128.png)](https://github.com/Ginnewzrealm/control-panel-for-twitter)
 
-**Control Panel for Twitter is a browser extension for desktop and mobile browsers, which gives you more control over Twitter and adds missing features and UI improvements**
+**A privately maintained wide-layout fork of Control Panel for Twitter. It retains the original interface controls and expands supported X/Twitter pages to use the available content width.**
 
 > [!IMPORTANT]
-> This is the support repository for Control Panel for Twitter - for installation links, screenshots, information about the extension, and FAQs, please visit the [Control Panel for Twitter website](https://soitis.dev/control-panel-for-twitter).
+> This is an independent third-party fork based on the MIT-licensed [Control Panel for Twitter](https://github.com/insin/control-panel-for-twitter) project. It is not affiliated with, endorsed by, or produced by the original author or X Corp.
 
-Check the latest updates and availability for your browser on the [releases page](https://github.com/insin/control-panel-for-twitter/releases).
+## Changes in this fork
 
-Follow [@ControlPanelFT](https://twitter.com/ControlPanelFT) on Twitter for extension news and other announcements.
+- Wider content layouts on supported X/Twitter pages
+- A distinct private-build name and icon
+- Project and privacy links owned by this fork
 
 ## Support
 
-To report a bug [create a new Issue](https://github.com/insin/control-panel-for-twitter/issues/new) here on GitHub.
+To report a bug, [create an Issue](https://github.com/Ginnewzrealm/control-panel-for-twitter/issues/new) in this repository.
 
 Please include:
 
@@ -21,8 +23,12 @@ Please include:
 - The browser and operating system you're using it on
 - Relevant URLs and screenshots if applicable
 
-If you don't have a GitHub account, you can use the [Browser Extension Feedback & Support form](https://soitis.dev/extensions/feedback) on our website instead, or email [extensions@soitis.dev](mailto:extensions@soitis.dev).
+## Privacy
+
+See the [Privacy Policy](PRIVACY_POLICY.md).
 
 ## Attribution
 
-Icon adapted from "Ibis icon" by [Delapouite](https://delapouite.com/) from [game-icons.net](https://game-icons.net), [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/)
+Original project copyright and license notices are retained in [LICENSE](LICENSE) and [NOTICE](NOTICE).
+
+Base icon adapted from "Ibis icon" by [Delapouite](https://delapouite.com/) from [game-icons.net](https://game-icons.net), [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/). The wide-layout badge was added for this private fork.

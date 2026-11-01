@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="disabled" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope=".72"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  <image width="1024" height="1024" href="../icons/icon.svg" filter="url(#disabled)"/>
+</svg>

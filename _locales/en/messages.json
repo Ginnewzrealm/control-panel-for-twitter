@@ -76,11 +76,11 @@
     "message": "Export configuration for bug report"
   },
   "extensionDescription": {
-    "message": "Gives you more control over Twitter and adds missing features and UI improvements",
+    "message": "Independent private wide-layout fork with controls and UI improvements for X/Twitter",
     "description": "<= 132 characters"
   },
   "extensionDescriptionShort": {
-    "message": "Gives you more control over Twitter and adds missing features and UI improvements",
+    "message": "Independent private wide-layout fork with controls and UI improvements for X/Twitter",
     "description": "<= 112 characters"
   },
   "extensionName": {
