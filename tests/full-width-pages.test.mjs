@@ -12,3 +12,8 @@ test('full-width layout includes the lists overview', () => {
   assert.match(script, /FULL_WIDTH_BODY_PSEUDO\s*=\s*[^\n]*\.Lists/)
   assert.match(script, /classList\.toggle\('Lists', isOnListsPage\(\)\)/)
 })
+
+test('full-width layout includes individual tweets unless relevant people are shown', () => {
+  assert.match(script, /FULL_WIDTH_BODY_PSEUDO\s*=\s*[^\n]*\.Tweet:not\(\.ShowRelevantPeople\)/)
+  assert.match(script, /classList\.toggle\('ShowRelevantPeople', config\.showRelevantPeople\)/)
+})

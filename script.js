@@ -2317,7 +2317,7 @@ const HIGH_CONTRAST_DARK = new Map([
   ['green500', 'rgb(97, 214, 163)'],
 ])
 // <body> pseudo-selector for pages the full-width content feature works on
-const FULL_WIDTH_BODY_PSEUDO = ':is(.Communities, .Community, .Explore, .History, .HomeTimeline, .List, .Lists, .Notifications, .Profile)'
+const FULL_WIDTH_BODY_PSEUDO = ':is(.Communities, .Community, .Explore, .History, .HomeTimeline, .List, .Lists, .Notifications, .Profile, .Tweet:not(.ShowRelevantPeople))'
 // Matches any notification count at the start of the title
 const TITLE_NOTIFICATION_RE = /^\(\d+\+?\) /
 // The Communities nav item takes you to /yourusername/communities
@@ -4330,6 +4330,8 @@ const configureCss = (() => {
       $style = null
       return
     }
+
+    $body.classList.toggle('ShowRelevantPeople', config.showRelevantPeople)
 
     let cssRules = [`
       .cpft_font_family, .cpft_text {
