@@ -4931,6 +4931,7 @@ const configureCss = (() => {
           body.Sidebar${FULL_WIDTH_BODY_PSEUDO} ${Selectors.PRIMARY_COLUMN},
           body.Sidebar${FULL_WIDTH_BODY_PSEUDO} ${Selectors.PRIMARY_COLUMN} > div:first-child > div:last-child {
             max-width: 990px;
+            width: 100%;
           }
           /* Make the "What's happening" input keep its original width */
           body.HomeTimeline ${Selectors.PRIMARY_COLUMN} > div:first-child > div:nth-of-type(3) div[role="progressbar"] + div {
