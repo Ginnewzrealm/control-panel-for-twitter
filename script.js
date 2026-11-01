@@ -2317,7 +2317,7 @@ const HIGH_CONTRAST_DARK = new Map([
   ['green500', 'rgb(97, 214, 163)'],
 ])
 // <body> pseudo-selector for pages the full-width content feature works on
-const FULL_WIDTH_BODY_PSEUDO = ':is(.Community, .List, .HomeTimeline)'
+const FULL_WIDTH_BODY_PSEUDO = ':is(.Community, .Explore, .History, .HomeTimeline, .List, .Notifications, .Profile)'
 // Matches any notification count at the start of the title
 const TITLE_NOTIFICATION_RE = /^\(\d+\+?\) /
 // The Communities nav item takes you to /yourusername/communities
