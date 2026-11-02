@@ -17,3 +17,10 @@ test('full-width layout includes individual tweets unless relevant people are sh
   assert.match(script, /FULL_WIDTH_BODY_PSEUDO\s*=\s*[^\n]*\.Tweet:not\(\.ShowRelevantPeople\)/)
   assert.match(script, /classList\.toggle\('ShowRelevantPeople', config\.showRelevantPeople\)/)
 })
+
+test('full-width layout does not cap the home composer at the legacy width', () => {
+  assert.doesNotMatch(
+    script,
+    /body\.HomeTimeline[^{}]*div\[role="progressbar"\] \+ div\s*\{\s*max-width:\s*598px;/,
+  )
+})

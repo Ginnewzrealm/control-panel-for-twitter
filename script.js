@@ -4937,10 +4937,6 @@ const configureCss = (() => {
             max-width: 990px;
             width: 100%;
           }
-          /* Make the "What's happening" input keep its original width */
-          body.HomeTimeline ${Selectors.PRIMARY_COLUMN} > div:first-child > div:nth-of-type(3) div[role="progressbar"] + div {
-            max-width: 598px;
-          }
           /* Use full width when the sidebar is not visible */
           body:not(.Sidebar)${FULL_WIDTH_BODY_PSEUDO} header[role="banner"] {
             flex-grow: 0;
